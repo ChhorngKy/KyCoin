@@ -96,8 +96,6 @@ class Transaction{
         const publicKey = ec.keyFromPublic(this.fromAddress, 'hex');
         return publicKey.verify(this.calculateHash(), this.signature);
     }
-
-
 }
 
 class Blockchain {
@@ -170,7 +168,7 @@ class Blockchain {
         for (let i = 1; i < this.chain.length; i++){
             let currentBlock = this.chain[i]
             let previousBlock= this.chain[i - 1]
-            if(!currentBlock.hash !== currentBlock.calculateHash()){
+            if(!currentBlock.hasValidTransactions()){
                 return false;
             }
             if (currentBlock.previousHash !== previousBlock.hash){

@@ -2,7 +2,6 @@ const {Blockchain , Transaction } = require("./BlockChain.js")
 const EC = require('elliptic').ec;
 const ec = new EC('secp256k1');
 
-
 const myKey = ec.keyFromPrivate('2ad3f5260d67e9ce0dca805a61d87707523cd301359327dbb86386dafc5a38d9')
 const myWalletAddress = myKey.getPublic('hex');
 
@@ -21,11 +20,7 @@ KyCoin.createTransaction(tx2);
 
 console.log('\nBalance of ChhorngKy', KyCoin.getBalanceOfAddress(myWalletAddress))
 
-console.log(KyCoin)
-// Check valid
-// console.log(KyCoin.chain[1])
-// KyCoin.chain[1] = "asdf";
-// console.log(KyCoin.chain[1])
+// KyCoin.chain[1].previousHash = "asdf";
 
 console.log("Is coin Valid: " + KyCoin.isChainValid().toString());
 
