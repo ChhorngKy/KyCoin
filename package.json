@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "crypto.js": "^3.2.1",
+    "elliptic": "^6.5.5",
+    "mysql2": "^3.9.7",
+    "sha256": "^0.2.0"
+  }
+}
