@@ -1,9 +1,18 @@
 {
+  "name": "kycoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "crypto-js": "^4.2.0",
-    "crypto.js": "^3.2.1",
     "elliptic": "^6.5.5",
-    "mysql2": "^3.9.7",
-    "sha256": "^0.2.0"
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7"
   }
 }
